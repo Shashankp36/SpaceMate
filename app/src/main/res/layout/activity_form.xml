@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Add a TextView to display the card view title -->
+    <TextView
+        android:id="@+id/textViewCardViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CardView Title"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Add EditText fields for name, date, time, and address -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="16dp"/>
+    <Button
+        android:id="@+id/buttonPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Date"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonPickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Time"
+        android:layout_margin="16dp"/>
+
+    <!-- Add TextViews to display the selected date and time -->
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Selected Date: "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSelectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Selected Time: "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_margin="16dp"/>
+
+    <!-- Add a Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="16dp"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:title="SETTINGS"
+        />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete_24"
+        android:title="ABOUT"
+        />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/cancel_24"
+        android:title="EXIT"
+        />
+    <item
+        android:id="@+id/e"
+        android:icon="@drawable/plus"
+        android:title="EXIT"
+        />
+
+
+</menu>

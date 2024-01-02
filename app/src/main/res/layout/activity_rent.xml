@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facilities Provided"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Owner's Name -->
+            <TextView
+                android:id="@+id/ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+            <!-- House Name -->
+            <TextView
+                android:id="@+id/houseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seaside Villa"
+                android:textSize="18sp"
+                android:layout_below="@+id/ownerName"
+                android:layout_alignStart="@+id/ownerName"
+                android:layout_alignLeft="@+id/ownerName" />
+
+            <!-- Location -->
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malibu, California"
+                android:textSize="18sp"
+                android:layout_below="@+id/houseName"
+                android:layout_alignStart="@+id/houseName"
+                android:layout_alignLeft="@+id/houseName" />
+
+            <!-- Rent -->
+            <TextView
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent: $1,200 per month"
+                android:textSize="18sp"
+                android:layout_below="@+id/location"
+                android:layout_alignStart="@+id/location"
+                android:layout_alignLeft="@+id/location" />
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bed" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_1"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="3 Bedrooms"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tub" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_2"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="2 Bathrooms"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="16dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/light" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_3"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Available"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/geyser" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_4"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Gyser Available"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/water" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_5"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Water Availavle"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv6"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/parking" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_6"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Parking Available"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv7"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wifi" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_7"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="WiFi Available"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv8"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/house" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_8"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Fully Furnished"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv9"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_9"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/house" />
+
+
+
+                <TextView
+                    android:id="@+id/payment_desc9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_9"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Newly Rennovated"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/rent1"
+    android:layout_width="match_parent"
+        android:layout_margin="16dp"
+    android:layout_height="wrap_content"
+    android:text="Rent This"
+    android:padding="12dp" />
+</LinearLayout>
+
+

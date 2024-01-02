@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="96dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/location"
+
+                />
+
+
+            <View android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:src="@drawable/profile"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectCategoryText"
+            android:text="Select Category"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/house" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_1"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Family"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/hotel" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_2"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Hotel"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ofiice" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_3"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Office"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv4"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_4"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/hostels" />
+
+                    <TextView
+                        android:id="@+id/payment_desc4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_4"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Hostel"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv5"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_5"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/pg" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_5"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="PG"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv6"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_6"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bach" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_6"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Bachelor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:padding="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv7"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_7"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/shop" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_7"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Shop"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv8"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_8"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/library" />
+
+
+
+                    <TextView
+                        android:id="@+id/payment_desc8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_8"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Library"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="170dp"
+        android:src="@drawable/ic_add"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="110dp"
+        android:src="@drawable/delete_24"
+        app:fabSize="normal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

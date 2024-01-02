@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SpaceMate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="categories">
+        <item>Family</item>
+        <item>Hotel</item>
+        <item>Office</item>
+        <item>Hostel</item>
+        <item>PG</item>
+        <item>Bachelor</item>
+        <item>Shop</item>
+        <item>Library</item>
+    </string-array>
+</resources>

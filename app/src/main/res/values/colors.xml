@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <color name="primaryBackground">#3A7CA5</color>
+
+        <color name="textIconColor">#A0A0A0</color>
+
+        <color name="ctaButtonColor">#2E7343</color>
+
+        <color name="accentColor">#F0CC3E</color>
+
+        <color name="contentBackground">#FFFFFF</color>
+
+        <color name="secondaryText">#333333</color>
+
+        <color name="categoryAccent">#E27E6B</color>
+
+        <color name="secondaryAccent">#42B6AC</color>
+
+        <color name="colorPrimary">#2827ca</color>
+        <color name="colorPrimary2">#2a7de1</color>
+        <color name="purple_700">#FF3700B3</color>
+        <color name="colorSecondary">#ffffff</color>
+        <color name="teal_700">#FF018786</color>
+        <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
+</resources>

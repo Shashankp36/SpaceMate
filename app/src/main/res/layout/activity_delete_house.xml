@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlist House"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+
+
+    <!-- Name of the House -->
+    <EditText
+        android:id="@+id/editTextHouseNamed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_inputs"
+        android:textColor="#fff"
+        android:hint="Name of the House"
+        android:layout_marginBottom="50dp"
+        android:padding="8dp" />
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Unlist House"
+        android:background="@drawable/button_gradient"
+        android:textColor="#fff"
+        android:padding="12dp" />
+</LinearLayout>

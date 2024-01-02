@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add House"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!--<EditText
+            android:id="@+id/editTextCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+
+            android:hint="Category"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp" />-->
+
+        <!-- Name of the House -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp"
+            android:hint="Category"
+            android:entries="@array/categories" />
+
+        <EditText
+            android:id="@+id/editTextHouseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:hint="Name of the House"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/editTextBedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:hint="No. of Bedrooms"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp" />
+
+        <!-- No. of Bathrooms -->
+        <EditText
+            android:id="@+id/editTextbathroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. of Bathrooms"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:padding="8dp" />
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:padding="8dp" />
+
+        <!-- Rent -->
+        <EditText
+            android:id="@+id/editTextRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent"
+
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_inputs"
+            android:textColor="#fff"
+            android:padding="8dp" />
+
+        <!-- Amenities -->
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxElectricity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxGeyser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geyser"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxParking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parking"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fi"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/captureImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:text="Capture Image"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_margin="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddHouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add House"
+            android:background="@drawable/button_gradient"
+            android:textColor="#fff"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
